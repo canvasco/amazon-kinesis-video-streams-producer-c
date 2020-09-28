@@ -111,7 +111,7 @@ INT32 lwsIotCallbackRoutine(struct lws *wsi, enum lws_callback_reasons reason,
 
     // Early return
     CHK(pCallInfo != NULL, retStatus);
-    lws_set_log_level(LLL_NOTICE | LLL_INFO | LLL_WARN | LLL_ERR, NULL);
+    //lws_set_log_level(LLL_NOTICE | LLL_INFO | LLL_WARN | LLL_ERR, NULL);
 
     pRequestInfo = pCallInfo->pRequestInfo;
     pBuffer = buffer + LWS_PRE;
